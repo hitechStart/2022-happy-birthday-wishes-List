@@ -13,8 +13,8 @@ class HeaderComponent extends Component {
         return (
             <div>
                 <header>
-                    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                    <div><a href="https://hitechstart.github.io/2021-Biografia/" className="navbar-brand">Invitations Management App</a></div>
+                    <nav className="navbar navbar-expand-md header">
+                    <div><a href="https://hitechstart.github.io/2021-Biografia/" className="navbar-brand" style={{color:"white"}}>Invitations Management App</a></div>
                     </nav>
                 </header>
             </div>

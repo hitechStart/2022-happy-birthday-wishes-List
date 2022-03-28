@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import ListInvitationsComponent from './components/ListInvitationsComponent';
@@ -20,11 +19,13 @@ function App() {
                           <Route path = "/invitations" component = {ListInvitationsComponent}></Route>
                           <Route path = "/add-invitations/:id" component = {CreateInvitationsComponent}></Route>
                           <Route path = "/view-invitations/:id" component = {ViewInvitationsComponent}></Route>
-                          {/* <Route path = "/update-employee/:id" component = {UpdateEmployeeComponent}></Route> */}
                     </Switch>
-                </div>
-              <FooterComponent />
+                </div>         
         </Router>
+  <div className="deadSpace">
+    
+  </div>
+        <FooterComponent />
     </div>
     
   );

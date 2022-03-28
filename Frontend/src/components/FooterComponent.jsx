@@ -5,15 +5,16 @@ class FooterComponent extends Component {
         super(props)
 
         this.state = {
-                 
+         currentYear : new Date().getFullYear(),       
         }
     }
 
     render() {
         return (
+           
             <div>
                 <footer className = "footer">
-                    <span className="text-muted">Di Ludovico Maximiliano</span>
+                    <span className="text-muted">Copyright © Maximiliano Di Ludovico {this.state.currentYear}</span>
                 </footer>
             </div>
         )
