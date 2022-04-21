@@ -39,6 +39,7 @@ class ViewInvitationsComponent extends Component {
                     </div>
 
                 </div>
+                <button style={{ marginLeft: "10px" }} onClick={event =>  window.location.href='/'}>Volver</button>
             </div>
         )
     }

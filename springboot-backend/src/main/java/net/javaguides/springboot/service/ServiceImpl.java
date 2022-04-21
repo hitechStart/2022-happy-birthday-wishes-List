@@ -25,12 +25,17 @@ public class ServiceImpl implements InvitationsService {
         invitationsDao.save(invitados);
         return "redirect:/";
     }
+    @Transactional(readOnly = true)
     public Optional<Invitados> buscarPorId(Long id){
+
         return invitationsDao.findById(id);
     }
+    //Importamos la notacion para hacer commit o rollback
+    @Transactional
     public Invitados almacenar(Invitados invitados){
         return invitationsDao.save(invitados);
     }
+    @Transactional
     public String eliminar(Invitados invitados){
         invitationsDao.delete(invitados);
         return "redirect:/";
